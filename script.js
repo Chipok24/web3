@@ -10,7 +10,7 @@ calculation.addEventListener("click", function () {
     const cheque = parseFloat(document.getElementById("input_1").value);
     const discount = parseFloat(document.getElementById("input_2").value);
 
-    if (number_visitors <= 0 || number_visitors < 0 || cheque <= 0){
+    if (number_visitors <= 0 || discount < 0 || cheque <= 0){
         alert("Ошибка, некоректные данные");
         output_1.textContent = `Чаевые:`;
         output_2.textContent = `Общая сумма:`;
@@ -22,4 +22,5 @@ calculation.addEventListener("click", function () {
         output_2.textContent = `Общая сумма: ${(cheque + tip).toFixed(2)} ₽`;
         output_3.textContent = `С каждого: ${((cheque + tip) / number_visitors).toFixed(2)} ₽`;
     }
+
 });
