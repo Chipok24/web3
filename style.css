@@ -31,3 +31,8 @@ input{
     border-color: #ccd5ae;
     border-style: solid;
 }
+
+#calculation:hover {
+    transition: 0.5s;
+    background-color: #bec2a5;
+}
